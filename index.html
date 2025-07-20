@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My-Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="logo-comun" class="logo"><img src="assets/logo/Comunity.png" alt="WKRP Logo" class="img-logo"></h1>
+        <nav>
+            <ul>
+                <li><a href="#my-project">MY PROJECT</a></li>
+                <li><a href="mailto:ranggathey06@gmail.com">CONTACT ME</a></li>
+                <li><a href="#tentang">TENTANG</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="FollowMe()">Follow Me</button>
+    </header>
+
+    <div id="tentang" class="container">
+        <div class="intro" data-aos="zoom-in">
+            <p class="title">Hello, Igrangg here!</p>
+            <p class="description">Student From SMKN 3 TABANAN</p>
+            <img src="assets/myfoto.jpeg" alt="Igarangg foto" class="img-foto">
+        </div>
+    </div>
+
+    <div id="my-project" class="parallax">
+        <div class="content">
+
+            <div class="section">
+                <p class="title" data-aos="zoom-in">Teknik Komputer Dan Jaringan</p>
+                <p class="description" data-aos="zoom-in">San Andreas Multiplayer Develompent</p>
+                <button class="mt-10 btn-cta" onclick="JoinComun()" data-aos="zoom-in">Join My Comunity</button>
+            </div>
+
+            <div class="inner">
+                <div class="card">
+                    <div class="card-item" data-aos="fade-up" data-aos-delay="200">
+                        <p class="title col-b">Batas Kota Roleplay</p>
+                        <hr>
+                        <p class="description col-b">
+                            <img src="assets/logo/BKRP.png" alt="BKRP Logo" class="img-logo-sc"><br>
+                            Server dengan fitur menarik yang di garap
+                        </p>
+                        <button class="mt-10 btn-cta" onclick="JoinBKRP()">See More</button>
+                    </div>
+                    <div class="card-item" data-aos="fade-up" data-aos-delay="300">
+                        <p class="title col-b">IndoCountry Roleplay</p>
+                        <hr>
+                        <p class="description col-b">
+                            <img src="assets/logo/ICRP.png" alt="ICRP Logo" class="img-logo-sc"><br>
+                            Server Sebelum Batas Kota Roleplay
+                        </p>
+                        <button class="mt-10 btn-cta" onclick="JoinBKRP()">See More</button>
+                    </div>
+                    <div class="card-item" data-aos="fade-up" data-aos-delay="400">
+                        <p class="title col-b">Flova Roleplay</p>
+                        <hr>
+                        <p class="description col-b">
+                            <img src="assets/logo/flova.png" alt="Flova Logo" class="img-logo-sc">
+                            Server yang saya garap sendiri
+                        </p>
+                        <button class="mt-10 btn-cta" onclick="JoinComun()">See More</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <button class="nav-btn prev-btn" onclick="scrollPrev()">❮</button>
+        <div class="wrap-img" id="scrollContainer">
+            <div class="item" data-aos="zoom-in-up">
+                <h3 class="p-5">Furniture House System</h3>
+                <img src="assets/showcase/sa-mp-000.png" alt="showcase1" class="img-sc">
+            </div>
+            <div class="item" data-aos="zoom-in-up">
+                <h3 class="p-5">Lift Apartemen System</h3>
+                <img src="assets/showcase/sa-mp-001.png" alt="showcase2" class="img-sc">
+            </div>
+            <div class="item" data-aos="zoom-in-up">
+                <h3 class="p-5">Select Char Textdraw System</h3>
+                <img src="assets/showcase/sa-mp-009.png" alt="showcase3" class="img-sc">
+            </div>
+            <div class="item" data-aos="zoom-in-up">
+                <h3 class="p-5">Real Lumberjack System</h3>
+                <img src="assets/showcase/sa-mp-012.png" alt="showcase4" class="img-sc">
+            </div>
+            <div class="item" data-aos="zoom-in-up">
+                <h3 class="p-5">Metal Detector System</h3>
+                <img src="assets/showcase/sa-mp-491.png" alt="showcase4" class="img-sc">
+            </div>
+        </div>
+        <button class="nav-btn next-btn" onclick="scrollNext()">❯</button>
+    </div>
+
+    <div class="parallax bg-nav display-flex justify-center align-center">
+        <div class="content">
+
+            <div class="section" data-aos="zoom-in">
+                <p class="title">Mari Kerja Sama!</p>
+                <p class="description">Membangun komunitas yang lebih baik bersama-sama</p>
+                <button class="mt-10 btn-cta" onclick="JoinComun()">Join Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

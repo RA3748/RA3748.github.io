@@ -1,0 +1,570 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #1A1E23;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover {
+    color: rgb(14, 72, 158);
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    transition: all .5s ease 0s;
+}
+
+li a {
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+
+li a:hover {
+    color: rgb(14, 72, 158);
+    transform: scale(1.1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: rgb(14, 72, 158);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    background-color: #232830;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+}
+
+.img-foto {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+    border-radius: 500px;
+}
+
+.parallax {
+    background-color: #2F343F;
+    height: 100vh;
+}
+
+.content {
+    color: white;
+}
+
+.section {
+    background-color: #1A1E23;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card-item {
+    background-color: #eaeaeacc;
+    color: black;
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 5px 10px 10px black;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #232830;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 70px 0;
+    position: relative;
+}
+.wrap-img {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    cursor: grab;
+    scroll-behavior: smooth;
+    padding: 0 80px; /* Kasih ruang buat tombol */
+}
+.wrap-img::-webkit-scrollbar {
+    display: none;
+}
+.item {
+    text-align: center;
+    width: 550px;
+    height: 380px;
+    background-color: #eaeaeacc;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.img-sc {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+.p-5 {
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.nav-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+.prev-btn {
+    left: 20px;
+}
+.next-btn {
+    right: 20px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.col-b {
+    color: black;
+}
+
+.bg-nav {
+    background-color: #1A1E23;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.img-logo-sc {
+    width: 100%;
+    max-width: 300px;
+}
+
+.img-logo {
+    width: 80px;
+}
+
+/* ===== MEDIA QUERIES UNTUK MOBILE ===== */
+
+/* Tablet (768px ke bawah) */
+@media (max-width: 768px) {
+    
+    /* HEADER RESPONSIVE */
+    header {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        gap: 5px;
+    }
+    
+    nav ul li {
+        padding: 8px;
+    }
+    
+    .btn-cta {
+        margin: 0;
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+    
+    /* INTRO SECTION */
+    .container {
+        padding: 40px 20px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .description {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+    
+    .img-foto {
+        max-width: 300px;
+        padding: 15px;
+    }
+    
+    /* PARALLAX SECTION */
+    .parallax {
+        height: auto;
+        min-height: 80vh;
+    }
+    
+    /* SECTION - PASTIKAN CENTER */
+    .section {
+        padding: 30px 20px;
+        text-align: center !important; /* Force center alignment */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    /* INNER CONTAINER */
+    .inner {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important; /* Override text-align: left */
+        width: 100%;
+    }
+    
+    /* CARD SECTION - STACK VERTICAL DAN CENTER */
+    .card {
+        flex-direction: column !important;
+        padding: 20px 10px;
+        align-items: center !important; /* Center the cards */
+        justify-content: center !important;
+        width: 100%;
+    }
+    
+    .card-item {
+        width: 90% !important;
+        max-width: 400px; /* Maximum width buat ga terlalu lebar */
+        margin: 15px auto !important;
+        padding: 20px !important;
+        text-align: center !important; /* Force center text */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    /* TEXT DALAM CARD - PAKSA CENTER */
+    .card-item .title {
+        text-align: center !important;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .card-item .description {
+        text-align: center !important;
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        line-height: 1.6;
+    }
+    
+    /* LOGO DALAM CARD */
+    .img-logo-sc {
+        max-width: 200px !important;
+        margin: 10px auto !important;
+        display: block !important;
+    }
+    
+    /* HR LINE */
+    .card-item hr {
+        width: 80%;
+        margin: 15px auto;
+    }
+    
+    /* SHOWCASE WRAPPER */
+    .wrapper {
+        height: 60vh;
+        padding: 40px 0;
+    }
+    
+    .wrap-img {
+        padding: 0 60px; /* Kurangin padding buat tombol */
+    }
+    
+    .item {
+        width: 350px; /* Lebih kecil buat mobile */
+        height: 280px;
+    }
+    
+    .item h3 {
+        font-size: 16px;
+        padding: 15px 10px;
+        text-align: center !important;
+    }
+    
+    /* TOMBOL NAVIGATION */
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+}
+
+/* Mobile Small (480px ke bawah) */
+@media (max-width: 480px) {
+    
+    /* HEADER EXTRA SMALL */
+    header {
+        padding: 8px;
+    }
+    
+    .img-logo {
+        width: 60px;
+    }
+    
+    .btn-cta {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    /* INTRO SECTION */
+    .title {
+        font-size: 18px;
+    }
+    
+    .description {
+        font-size: 18px;
+    }
+    
+    .img-foto {
+        max-width: 250px;
+    }
+    
+    /* SECTION - SMALLER PADDING TAPI TETEP CENTER */
+    .section {
+        padding: 20px 15px !important;
+        text-align: center !important;
+    }
+    
+    /* CARD ITEMS */
+    .card {
+        padding: 15px 5px !important;
+    }
+    
+    .card-item {
+        width: 95% !important;
+        margin: 10px auto !important;
+        padding: 15px !important;
+        text-align: center !important;
+    }
+    
+    .card-item .description {
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+    
+    .img-logo-sc {
+        max-width: 150px !important;
+    }
+    
+    /* SHOWCASE - LEBIH KECIL LAGI */
+    .wrapper {
+        height: 50vh;
+        padding: 30px 0;
+    }
+    
+    .wrap-img {
+        padding: 0 50px;
+    }
+    
+    .item {
+        width: 280px; /* Lebih kecil lagi */
+        height: 220px;
+    }
+    
+    .item h3 {
+        font-size: 14px;
+        padding: 10px 8px;
+        text-align: center !important;
+    }
+    
+    /* TOMBOL LEBIH KECIL */
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .prev-btn {
+        left: 8px;
+    }
+    
+    .next-btn {
+        right: 8px;
+    }
+}
+
+/* FIXES UNTUK LANDSCAPE MODE MOBILE */
+@media (max-width: 768px) and (orientation: landscape) {
+    .wrapper {
+        height: 70vh;
+    }
+    
+    .parallax {
+        min-height: 100vh;
+    }
+    
+    .section {
+        padding: 20px !important;
+        text-align: center !important;
+    }
+}
+
+/* TOUCH IMPROVEMENTS */
+@media (max-width: 768px) {
+    /* Bikin tombol lebih mudah di-tap */
+    .nav-btn {
+        min-height: 44px; /* Apple guideline minimum touch target */
+        min-width: 44px;
+    }
+    
+    /* Disable hover effects di mobile */
+    .nav-btn:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .logo:hover {
+        transform: none;
+    }
+    
+    li a:hover {
+        transform: none;
+    }
+    
+    .btn-cta:hover {
+        transform: none;
+    }
+    
+    /* PAKSA SEMUA TEXT CENTER DI MOBILE */
+    .parallax .content {
+        text-align: center !important;
+    }
+    
+    .parallax .content .section {
+        text-align: center !important;
+    }
+    
+    .parallax .content .section .title,
+    .parallax .content .section .description {
+        text-align: center !important;
+    }
+}
